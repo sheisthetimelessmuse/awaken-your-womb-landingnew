@@ -813,6 +813,20 @@
     margin:22px 0 0 !important;font-weight:600;
   }
 
+  /* 1:1 MENTORSHIP */
+  .mentorship{background:var(--white);}
+  .mentorship .container{max-width:980px;}
+  .mentorship-layout{display:grid;grid-template-columns:0.8fr 1.2fr;gap:56px;align-items:center;text-align:left;}
+  .mentorship-photo{border-radius:90px 20px 20px 4px;width:100%;height:520px;object-fit:cover;box-shadow:0 30px 60px rgba(0,0,0,.28);filter:grayscale(15%);}
+  .mentorship h2{font-size:38px;color:var(--blood);font-weight:700;margin:0 0 22px;line-height:1.26;}
+  .mentorship h2 em{font-style:italic;font-weight:500;color:var(--red);}
+  .mentorship p{font-family:var(--font-body);font-size:17px;color:var(--ink-soft);line-height:1.75;margin-bottom:18px;}
+  .mentorship .btn{margin-top:10px;}
+  @media (max-width:900px){
+    .mentorship-layout{grid-template-columns:1fr;gap:28px;}
+    .mentorship-photo{height:380px;}
+  }
+
   footer{background:var(--ink);color:#8a7360;text-align:center;padding:38px 20px;font-family:var(--font-body);font-size:14px;border-top:1px solid rgba(248,236,216,.08);}
 
   .sticky-cta{
@@ -1384,6 +1398,23 @@
     <p class="reveal">Join 100+ women who've already found their way back to their body.</p>
     <a href="https://buy.stripe.com/aFa4gA2lRaCx4vR2JWfYY00" class="btn">Begin Your Womb Journey</a>
     <p class="final-trust reveal">✓ Lifetime access &nbsp; ✓ Level 1 Certification &nbsp; ✓ Learn at your own pace</p>
+  </div>
+</section>
+
+<!-- 1:1 MENTORSHIP -->
+<section class="mentorship">
+  <div class="container">
+    <div class="mentorship-layout">
+      <img src="mentorship-photo.jpg" alt="Bliss Ann" class="mentorship-photo reveal">
+      <div>
+        <p class="eyebrow reveal">Private Mentorship</p>
+        <h2 class="reveal">Interested in <em>1:1 support?</em></h2>
+        <p class="reveal">Bliss has limited spaces available for 1:1 support. If you feel called to work with her as your guide and mentor, she specializes in helping women move through life's phases, chapters, thresholds, and death and rebirth processes.</p>
+        <p class="reveal">Working together, you'll be held in a safe space to unravel everything you've been carrying, with someone to help you alchemize and hold you through your life transitions. She works with the nervous system, expression, embodied practice, and womb wisdom to guide each session.</p>
+        <p class="reveal">Sessions might look like rage rituals, grieving ceremonies, talk therapy, sensual movement, dance as medicine, or simply sitting with your dreams together, uncovering how to evolve into the woman you're becoming.</p>
+        <a href="#" class="btn reveal">Apply for Mentorship</a>
+      </div>
+    </div>
   </div>
 </section>
 
