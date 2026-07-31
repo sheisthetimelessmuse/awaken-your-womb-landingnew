@@ -215,6 +215,23 @@
     .founder-photo{height:380px;}
   }
 
+  /* HONORING THE LINEAGE */
+  .lineage{background:var(--cream);}
+  .lineage .container{max-width:1080px;}
+  .lineage-layout{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;text-align:left;margin-top:14px;}
+  .lineage-photo{border-radius:20px 90px 20px 4px;width:100%;height:520px;object-fit:cover;object-position:center 20%;box-shadow:0 30px 60px rgba(0,0,0,.28);}
+  .lineage h2{font-size:40px;color:var(--blood);font-weight:700;margin:0 0 26px;line-height:1.26;}
+  .lineage h2 em{font-style:italic;font-weight:500;color:var(--red);}
+  .lineage p{font-family:var(--font-body);font-size:18.5px;color:var(--ink-soft);line-height:1.75;margin-bottom:20px;text-align:left;}
+  .lineage-link{font-family:var(--font-body);font-weight:700;color:var(--red);}
+  .lineage-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px;}
+  .lineage-strip img{width:100%;height:170px;object-fit:cover;border-radius:14px;box-shadow:0 12px 26px rgba(0,0,0,.22);}
+  @media (max-width:900px){
+    .lineage-layout{grid-template-columns:1fr;gap:28px;}
+    .lineage-photo{height:380px;}
+    .lineage-strip{grid-template-columns:repeat(2,1fr);}
+  }
+
   /* CTA BREAK */
   .cta-break{background:var(--sand);text-align:center;padding:36px 0;}
   .cta-break .container{max-width:620px;}
@@ -1160,6 +1177,28 @@
   <div class="container">
     <p class="eyebrow center reveal">Bringing the Medicine Home</p>
     <p class="mission-line reveal">Not everyone can travel to Guatemala for this medicine, so we brought it to you. We know this work changes lives, and we want it to change yours too. ♡</p>
+  </div>
+</section>
+
+<!-- HONORING THE LINEAGE -->
+<section class="lineage">
+  <div class="container">
+    <p class="eyebrow center reveal">Honoring the Lineage</p>
+    <div class="lineage-layout">
+      <div>
+        <h2 class="reveal">Where this <em>medicine comes from.</em></h2>
+        <p class="reveal">Every technique in this course was passed down from Mariu, our teacher, and the Guatemalan abuelas and midwives of San Marcos La Laguna who have carried this medicine for generations. We are simply the bridge, bringing what we were given back to you.</p>
+        <p class="reveal">If this work resonates, you can go even deeper. Through The Midwife Project, you can travel to Guatemala and train directly with the abuelas who taught us, in year-round in-person trainings held right where this medicine lives.</p>
+        <p class="reveal"><a href="https://www.midwifeproject.net/" class="lineage-link" target="_blank" rel="noopener">Learn more at midwifeproject.net &rarr;</a></p>
+      </div>
+      <img src="lineage-hero.jpg" alt="Guatemalan abuela performing a copal smoke offering" class="lineage-photo reveal">
+    </div>
+    <div class="lineage-strip reveal">
+      <img src="lineage-01.jpg" alt="Mariu passing medicinal herbs to a circle of women">
+      <img src="lineage-02.jpg" alt="Guatemalan women in ceremony with a flower and herb offering">
+      <img src="lineage-03.jpg" alt="Mariu fitting traditional traje on a Guatemalan abuela">
+      <img src="lineage-04.jpg" alt="Mariu foraging medicinal herbs in Guatemala">
+    </div>
   </div>
 </section>
 
