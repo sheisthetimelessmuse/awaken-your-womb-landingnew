@@ -719,18 +719,20 @@
   .symptoms h2{font-size:38px;color:var(--blood);font-weight:700;margin:14px auto 38px;line-height:1.32;max-width:640px;}
   .symptoms h2 em{font-style:italic;font-weight:500;color:var(--red);}
   .symptoms-img{max-width:440px;width:100%;margin:0 auto;border-radius:24px;box-shadow:0 30px 60px rgba(0,0,0,.28);}
-  .symptoms-benefits{margin-top:56px;max-width:760px;margin-left:auto;margin-right:auto;}
-  .symptoms-benefits .eyebrow{margin-bottom:26px;}
-  .benefits-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;text-align:left;}
-  .benefits-list li{position:relative;padding-left:32px;font-family:var(--font-body);font-size:17px;color:var(--ink-soft);line-height:1.55;}
-  .benefits-list li:before{
-    content:"";position:absolute;left:0;top:5px;
-    width:16px;height:16px;border-radius:50%;
-    background:var(--red);
-    box-shadow:5px -3px 0 0 var(--cream-soft);
-  }
+
+  /* THE WOMB / BENEFITS */
+  .womb-power{background:var(--white);text-align:center;}
+  .womb-power .container{max-width:720px;}
+  .womb-power .eyebrow{margin-bottom:18px;}
+  .womb-power h2{font-family:var(--font-head);font-size:56px;color:var(--blood);font-weight:700;margin:0 0 20px;line-height:1.1;letter-spacing:.5px;}
+  .womb-power h2 em{font-style:italic;font-weight:500;color:var(--red);}
+  .womb-power .womb-power-sub{font-family:var(--font-head);font-style:italic;font-weight:500;font-size:21px;color:var(--ink-soft);max-width:520px;margin:0 auto 50px;line-height:1.5;}
+  .benefits-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:24px;align-items:center;}
+  .benefits-list li{font-family:var(--font-head);font-size:21px;color:var(--ink);line-height:1.4;padding-left:34px;position:relative;max-width:480px;}
+  .benefits-list li .rose{position:absolute;left:0;top:-2px;font-size:20px;}
   @media (max-width:700px){
-    .benefits-list{grid-template-columns:1fr;}
+    .womb-power h2{font-size:42px;}
+    .benefits-list li{font-size:18px;}
   }
 
   /* WHO ITS FOR */
@@ -995,17 +997,29 @@
     <p class="eyebrow center reveal">Sound Familiar?</p>
     <h2 class="reveal">If any of this feels <em>like you</em>, you're not alone.</h2>
     <img src="symptoms-graphic.jpg" alt="Symptoms of a blocked womb space: painful periods and PMS, fibroids, infertility, sexual disconnection, vaginismus, emotional heaviness, PCOS, endometriosis" class="symptoms-img reveal">
-    <div class="symptoms-benefits reveal">
-      <p class="eyebrow center">Benefits of Womb Work &amp; Womb Massage</p>
-      <ul class="benefits-list">
-        <li>Restores harmony to the belly</li>
-        <li>Supports fertility</li>
-        <li>Balances hormones</li>
-        <li>Improves energy flow</li>
-        <li>Gently releases trauma held in the womb space</li>
-        <li>Awakens sensuality to self</li>
-      </ul>
-    </div>
+  </div>
+</section>
+
+<!-- THE WOMB / BENEFITS -->
+<section class="womb-power">
+  <div class="container">
+    <p class="eyebrow center reveal">Why This Work Matters</p>
+    <h2 class="reveal">The <em>Womb</em></h2>
+    <p class="womb-power-sub reveal">Your womb isn't just an organ. It's a source of power, memory, and life force, waiting to be reclaimed.</p>
+    <ul class="benefits-list reveal">
+      <li><span class="rose">🌹</span>Restores harmony to the belly</li>
+      <li><span class="rose">🌹</span>Supports fertility</li>
+      <li><span class="rose">🌹</span>Balances hormones</li>
+      <li><span class="rose">🌹</span>Improves energy flow</li>
+      <li><span class="rose">🌹</span>Gently releases trauma held in the womb space</li>
+      <li><span class="rose">🌹</span>Awakens sensuality to self</li>
+      <li><span class="rose">🌹</span>Reconnects you to your intuition and inner wisdom</li>
+      <li><span class="rose">🌹</span>Softens chronic tension and guarding in the pelvis</li>
+      <li><span class="rose">🌹</span>Deepens your relationship with your menstrual cycle</li>
+      <li><span class="rose">🌹</span>Restores trust and safety in your own body</li>
+      <li><span class="rose">🌹</span>Opens space for creativity and self-expression</li>
+      <li><span class="rose">🌹</span>Anchors you back into presence and pleasure</li>
+    </ul>
   </div>
 </section>
 
