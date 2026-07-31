@@ -684,10 +684,11 @@
   .sobada{background:var(--cream);padding:0;}
   .sobada-layout{display:grid;grid-template-columns:0.8fr 1.2fr;align-items:center;gap:0;}
   .sobada-photo{display:flex;align-items:center;justify-content:center;padding:44px;}
-  .sobada-photo img{
+  .sobada-photo img, .sobada-photo video{
     width:100%;height:560px;object-fit:cover;display:block;
     border-radius:28px 28px 28px 130px;
     box-shadow:0 30px 60px rgba(0,0,0,.25);
+    background:#000;
   }
   .sobada-content{padding:80px 70px 80px 20px;display:flex;flex-direction:column;justify-content:center;text-align:left;}
   .sobada-content .eyebrow{margin-bottom:16px;}
@@ -695,14 +696,19 @@
   .sobada h2 em{font-style:italic;font-weight:500;color:var(--red);}
   .sobada p.body{font-family:var(--font-head);font-style:italic;font-weight:500;font-size:23px;color:var(--blood);line-height:1.5;margin:0 0 28px;}
   .sobada-list{list-style:none;padding:0;margin:0 0 34px;}
-  .sobada-list li{position:relative;padding-left:26px;margin-bottom:16px;font-family:var(--font-body);font-size:17px;color:var(--ink-soft);line-height:1.65;}
+  .sobada-list li{position:relative;padding-left:32px;margin-bottom:18px;font-family:var(--font-body);font-size:17px;color:var(--ink-soft);line-height:1.65;}
   .sobada-list li strong{color:var(--blood);font-weight:800;}
-  .sobada-list li:before{content:"●";position:absolute;left:0;top:7px;color:var(--red);font-size:7px;}
+  .sobada-list li:before{
+    content:"";position:absolute;left:0;top:5px;
+    width:16px;height:16px;border-radius:50%;
+    background:var(--red);
+    box-shadow:5px -3px 0 0 var(--cream);
+  }
   .sobada .btn{align-self:flex-start;}
   @media (max-width:900px){
     .sobada-layout{grid-template-columns:1fr;}
     .sobada-photo{padding:36px 28px 0;}
-    .sobada-photo img{height:340px;}
+    .sobada-photo img, .sobada-photo video{height:340px;}
     .sobada-content{padding:32px 28px 50px;}
     .sobada p.body{font-size:19px;}
   }
@@ -948,7 +954,11 @@
 <!-- SOBADA TRADITION -->
 <section class="sobada">
   <div class="sobada-layout">
-    <div class="sobada-photo reveal"><img src="mod4-advanced.jpg" alt="Close-up of hands performing Mayan abdominal-womb massage"></div>
+    <div class="sobada-photo reveal">
+      <video controls playsinline preload="metadata" poster="sobada-video-poster.jpg">
+        <source src="sobada-video.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="sobada-content">
       <p class="eyebrow reveal">Mayan Abdominal-Womb Massage (Sobada) Training</p>
       <h2 class="reveal">An invitation to <em>remember</em> what your body has always known.</h2>
