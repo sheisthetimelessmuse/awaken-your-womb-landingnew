@@ -215,6 +215,23 @@
     .founder-photo{height:380px;}
   }
 
+  /* HONORING THE LINEAGE */
+  .lineage{background:var(--cream);}
+  .lineage .container{max-width:1080px;}
+  .lineage-layout{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;text-align:left;margin-top:14px;}
+  .lineage-photo{border-radius:20px 90px 20px 4px;width:100%;height:520px;object-fit:cover;object-position:center 20%;box-shadow:0 30px 60px rgba(0,0,0,.28);}
+  .lineage h2{font-size:40px;color:var(--blood);font-weight:700;margin:0 0 26px;line-height:1.26;}
+  .lineage h2 em{font-style:italic;font-weight:500;color:var(--red);}
+  .lineage p{font-family:var(--font-body);font-size:18.5px;color:var(--ink-soft);line-height:1.75;margin-bottom:20px;text-align:left;}
+  .lineage-link{font-family:var(--font-body);font-weight:700;color:var(--red);}
+  .lineage-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px;}
+  .lineage-strip img{width:100%;height:170px;object-fit:cover;border-radius:14px;box-shadow:0 12px 26px rgba(0,0,0,.22);}
+  @media (max-width:900px){
+    .lineage-layout{grid-template-columns:1fr;gap:28px;}
+    .lineage-photo{height:380px;}
+    .lineage-strip{grid-template-columns:repeat(2,1fr);}
+  }
+
   /* CTA BREAK */
   .cta-break{background:var(--sand);text-align:center;padding:36px 0;}
   .cta-break .container{max-width:620px;}
@@ -410,6 +427,10 @@
     font-family:var(--font-body);
     font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;font-weight:700;
     color:var(--red);margin-top:14px;line-height:1.4;white-space:normal;
+  }
+  .dm-avatar{
+    width:64px;height:64px;border-radius:50%;object-fit:cover;
+    margin:0 auto 14px;display:block;box-shadow:0 8px 20px rgba(0,0,0,.25);
   }
   .shot-card.is-empty{
     min-height:190px;
@@ -707,6 +728,7 @@
   .instructors h2 em{font-style:italic;font-weight:500;color:var(--red);}
   .instructors .sub{text-align:center;color:var(--ink-soft);font-family:var(--font-body);margin-bottom:60px;font-size:18px;}
   .inst-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  .inst-grid-single{grid-template-columns:1fr;max-width:460px;margin:0 auto;}
   .inst-card img{border-radius:20px 20px 4px 70px;margin-bottom:26px;height:380px;object-fit:cover;width:100%;}
   .inst-card h3{font-size:27px;color:var(--blood);font-weight:700;font-style:italic;}
   .inst-card .title{font-family:var(--font-body);font-size:12.5px;letter-spacing:1px;text-transform:uppercase;color:var(--red);margin:12px 0 16px;font-weight:700;}
@@ -789,6 +811,23 @@
   .final-trust{
     color:var(--cream-soft) !important;font-size:13.5px !important;letter-spacing:.3px;
     margin:22px 0 0 !important;font-weight:600;
+  }
+
+  /* 1:1 MENTORSHIP */
+  .mentorship{background:var(--white);}
+  .mentorship .container{max-width:980px;}
+  .mentorship-layout{display:grid;grid-template-columns:0.8fr 1.2fr;gap:56px;align-items:center;text-align:left;}
+  .mentorship-photo{border-radius:90px 20px 20px 4px;width:100%;height:520px;object-fit:cover;box-shadow:0 30px 60px rgba(0,0,0,.28);filter:grayscale(15%);}
+  .mentorship h2{font-size:38px;color:var(--blood);font-weight:700;margin:0 0 22px;line-height:1.26;}
+  .mentorship h2 em{font-style:italic;font-weight:500;color:var(--red);}
+  .mentorship p{font-family:var(--font-body);font-size:17px;color:var(--ink-soft);line-height:1.75;margin-bottom:18px;}
+  .mentorship .btn{margin-top:10px;}
+  .mentorship-quote{max-width:760px;margin:56px auto 0;text-align:center;}
+  .mentorship-quote blockquote{font-family:var(--font-head);font-style:italic;font-weight:500;font-size:22px;line-height:1.6;color:var(--blood);margin:0 0 16px;}
+  .mentorship-quote .mq-attr{font-family:var(--font-body);font-size:13px;letter-spacing:.6px;text-transform:uppercase;font-weight:700;color:var(--red);}
+  @media (max-width:900px){
+    .mentorship-layout{grid-template-columns:1fr;gap:28px;}
+    .mentorship-photo{height:380px;}
   }
 
   footer{background:var(--ink);color:#8a7360;text-align:center;padding:38px 20px;font-family:var(--font-body);font-size:14px;border-top:1px solid rgba(248,236,216,.08);}
@@ -875,7 +914,7 @@
     <p class="hero-descriptor">A self-paced reclamation of your womb, mind, and spirit, from burnout and disconnection to feeling fully alive in your own body, rooted in ancient Mayan wisdom.</p>
   </div>
   <div class="hero-cta-block">
-    <a href="https://thesisterhoodhive.thinkific.com/order?ct=20f4edc6-caa3-49e7-9a41-0f6b0fc0e4a6" class="btn">Begin Your Womb Journey</a>
+    <a href="https://buy.stripe.com/aFa4gA2lRaCx4vR2JWfYY00" class="btn">Begin Your Womb Journey</a>
     <p class="microcopy">Instant access · Lifetime access · Level 1 Certification included</p>
   </div>
 </div>
@@ -891,17 +930,17 @@
   <div class="container">
     <p class="eyebrow center reveal">A Mayan Womb Massage Course</p>
     <h2 class="reveal">Imagine feeling at home in <em>your own body</em> again, and being able to offer this healing to clients.</h2>
-    <p class="hook reveal">Our course will give you the tools.</p>
+    <p class="hook reveal">This course will give you the tools.</p>
     <p class="imagine reveal">Picture feeling safe in your own skin, trusting your cycle, and having a ritual to return to instead of white-knuckling through burnout.</p>
     <div class="intro-fan reveal">
-      <div class="f-photo f1"><img src="https://images.squarespace-cdn.com/content/v1/691b9213f19a3d69818cb315/55b5e409-a9c8-4406-af96-9880371d0da5/Pheonix+%26+Bliss-524.JPEG" alt="Hand holding, connection between women"></div>
-      <div class="f-photo f2"><img src="https://images.squarespace-cdn.com/content/v1/691b9213f19a3d69818cb315/a57559ba-2ca0-4209-b6b1-ef764cd2b429/IMG_4208.JPG" alt="Water and flower ritual on the back"></div>
-      <div class="f-photo f3"><img src="https://images.squarespace-cdn.com/content/v1/691b9213f19a3d69818cb315/f053e952-25f3-46cd-911d-a26c74f1a96b/IMG_4213.JPG" alt="Womb and abdominal massage demonstration"></div>
-      <div class="f-photo f4"><img src="https://images.squarespace-cdn.com/content/v1/691b9213f19a3d69818cb315/446b24b4-7894-467c-96f9-8157458871a5/IMG_4223.JPG" alt="Flower spiral ritual on the belly"></div>
-      <div class="f-photo f5"><img src="https://images.squarespace-cdn.com/content/v1/691b9213f19a3d69818cb315/595f69b8-572b-4129-9338-e5fcb96a39d4/Pheonix+%26+Bliss-478.JPEG" alt="Healer's hand in a guided ritual gesture"></div>
+      <div class="f-photo f1"><img src="collage-01.jpg" alt="Bliss performing Mayan abdominal-womb massage"></div>
+      <div class="f-photo f2"><img src="collage-02.jpg" alt="Bliss performing womb massage technique"></div>
+      <div class="f-photo f3"><img src="collage-05.jpg" alt="Bliss in a moment of ritual presence"></div>
+      <div class="f-photo f4"><img src="collage-03.jpg" alt="Bliss Ann, portrait"></div>
+      <div class="f-photo f5"><img src="collage-04.jpg" alt="Bliss Ann in a moment of prayer"></div>
     </div>
     <p class="lead reveal">Awaken Your Womb is the guided path there: an online course in Mayan-inspired womb massage that teaches you to release what your body has been holding, and build a practice you'll return to for life.</p>
-    <a href="https://thesisterhoodhive.thinkific.com/order?ct=20f4edc6-caa3-49e7-9a41-0f6b0fc0e4a6" class="btn glow reveal">From Disconnected to Awakened</a>
+    <a href="https://buy.stripe.com/aFa4gA2lRaCx4vR2JWfYY00" class="btn glow reveal">From Disconnected to Awakened</a>
   </div>
 </section>
 
@@ -919,7 +958,7 @@
         <li>Study the wisdom of the organs as containers for the soul.</li>
         <li>Become a steward of ancestral bodywork and Mayan wisdom.</li>
       </ul>
-      <a href="https://thesisterhoodhive.thinkific.com/order?ct=20f4edc6-caa3-49e7-9a41-0f6b0fc0e4a6" class="btn reveal">Begin Here</a>
+      <a href="https://buy.stripe.com/aFa4gA2lRaCx4vR2JWfYY00" class="btn reveal">Begin Here</a>
     </div>
   </div>
 </section>
@@ -946,7 +985,7 @@
       <div class="who-item reveal">
         <span class="who-icon">🌙</span>
         <p>Your cycle feels like a stranger</p>
-        <p>Your womb is the oldest calendar you have. We teach you how to read her again.</p>
+        <p>Your womb is the oldest calendar you have. I teach you how to read her again.</p>
       </div>
       <div class="who-item reveal">
         <span class="who-icon">🤲</span>
@@ -1024,7 +1063,7 @@
       <img src="testimonial-photo.jpg" alt="Student holding a hibiscus flower" class="qf-photo">
       <div class="qf-text">
         <span class="qf-tag">Full Transformation</span>
-        <blockquote>&ldquo;Bliss and Joslyn, this course has changed my life. I am blown away by how you both teach this body of work, and I was able to integrate it so effortlessly. I highly recommend it to any woman looking to go deeper within herself. Just wow. Thank you.&rdquo;</blockquote>
+        <blockquote>&ldquo;Bliss, this course has changed my life. I am blown away by how you teach this body of work, and I was able to integrate it so effortlessly. I highly recommend it to any woman looking to go deeper within herself, and offer this massage to women in your community, sisters, clients, even your daughters.&rdquo;</blockquote>
         <p class="qf-attr">Awaken Your Womb Student</p>
       </div>
     </div>
@@ -1067,6 +1106,7 @@
       <div class="dm-card reveal"><span class="dm-tag">Cycle Awareness</span><p>I started bleeding this morning, right on time, barely any spotting. I'm attributing this to the womb steaming and herbal protocol, and I've barely had any mood swings. Really feeling more in tune with my womb's needs. 🌹</p><p class="dm-name">Student of Awaken Your Womb</p></div>
       <div class="dm-card reveal"><span class="dm-tag">Self Trust</span><p>Truly, I sent prayers your way this morning. The three of you, individually. The calling that this womb work journey has led me to feels like such a trust fall into miracles, and I cannot thank you enough.</p><p class="dm-name">Student of Awaken Your Womb</p></div>
       <div class="dm-card reveal"><span class="dm-tag">Emotional Healing</span><p>I am so grateful to have learned from you and Joslyn. This container opened me up to some deeper healing stored in my womb. I'm already feeling lighter and more myself.</p><p class="dm-name">Student of Awaken Your Womb</p></div>
+      <div class="dm-card reveal"><img src="alina-photo.jpg" alt="Alina, Therapist and Relationship Coach" class="dm-avatar"><span class="dm-tag">Emotional Release</span><p>I had no idea how deeply my pain was stored in my belly &amp; womb until receiving this massage. I cried so much and revisited moments I had suppressed, but that still lingered and created tension in my body and spirit. So grateful to experience such a special ceremony.</p><p class="dm-name">Alina, Therapist &amp; Relationship Coach, 32</p></div>
     </div>
   </div>
 </section>
@@ -1075,7 +1115,7 @@
 <section class="retreat-memories">
   <div class="container">
     <p class="eyebrow center reveal">Behind The Work</p>
-    <h2 class="reveal">Our In-Person Retreat <em>Memories</em></h2>
+    <h2 class="reveal">My In-Person Retreat <em>Memories</em></h2>
     <p class="sub reveal">Witness the women doing this work in real time.</p>
   </div>
   <div class="retreat-scroll-wrap reveal">
@@ -1130,7 +1170,7 @@
 <section class="cta-break">
   <div class="container reveal">
     <p>These are real women, in real bodies, feeling real shifts. Yours could be next.</p>
-    <a href="https://thesisterhoodhive.thinkific.com/order?ct=20f4edc6-caa3-49e7-9a41-0f6b0fc0e4a6" class="btn">Begin Your Womb Journey</a>
+    <a href="https://buy.stripe.com/aFa4gA2lRaCx4vR2JWfYY00" class="btn">Begin Your Womb Journey</a>
   </div>
 </section>
 
@@ -1154,27 +1194,44 @@
 <section class="mission">
   <div class="container">
     <p class="eyebrow center reveal">Bringing the Medicine Home</p>
-    <p class="mission-line reveal">Not everyone can travel to Guatemala for this medicine, so we brought it to you. We know this work changes lives, and we want it to change yours too. ♡</p>
+    <p class="mission-line reveal">Not everyone can travel to Guatemala for this medicine, so I brought it to you. I know this work changes lives, and I want it to change yours too. ♡</p>
+  </div>
+</section>
+
+<!-- HONORING THE LINEAGE -->
+<section class="lineage">
+  <div class="container">
+    <p class="eyebrow center reveal">Honoring the Lineage</p>
+    <div class="lineage-layout">
+      <div>
+        <h2 class="reveal">Where this <em>medicine comes from.</em></h2>
+        <p class="reveal">Every technique in this course was passed down from Mariu, my teacher, and the Guatemalan abuelas and midwives of San Marcos La Laguna who have carried this medicine for generations. I am simply the bridge, bringing what I was given back to you.</p>
+        <p class="reveal">If this work resonates, you can go even deeper. Through The Midwife Project, you can travel to Guatemala and train directly with the abuelas who taught me, in year-round in-person trainings held right where this medicine lives.</p>
+        <p class="reveal">Part of your purchase, 5% of profits, goes directly to The Midwife Project, supporting the abuelas and the ongoing practice of this lineage.</p>
+        <p class="reveal"><a href="https://www.midwifeproject.net/" class="lineage-link" target="_blank" rel="noopener">Learn more at midwifeproject.net &rarr;</a></p>
+      </div>
+      <img src="lineage-hero.jpg" alt="Guatemalan abuela performing a copal smoke offering" class="lineage-photo reveal">
+    </div>
+    <div class="lineage-strip reveal">
+      <img src="lineage-01.jpg" alt="Mariu passing medicinal herbs to a circle of women">
+      <img src="lineage-02.jpg" alt="Guatemalan women in ceremony with a flower and herb offering">
+      <img src="lineage-03.jpg" alt="Mariu fitting traditional traje on a Guatemalan abuela">
+      <img src="lineage-04.jpg" alt="Mariu foraging medicinal herbs in Guatemala">
+    </div>
   </div>
 </section>
 
 <!-- INSTRUCTORS -->
 <section class="instructors">
   <div class="container">
-    <h2 class="reveal">Meet <em>your guides</em></h2>
+    <h2 class="reveal">Meet <em>your guide</em></h2>
     <p class="sub reveal">Trained directly under Mayan midwives.</p>
-    <div class="inst-grid">
+    <div class="inst-grid inst-grid-single">
       <div class="inst-card reveal">
         <img src="bliss-photo.jpg" alt="Bliss Ann" style="object-position:center 15%;">
         <h3>Bliss Ann</h3>
         <p class="title">Somatics Healer · Artist · Womb Tender</p>
-        <p>Bliss has spent the past seven years studying and sharing traditional Mayan womb wisdom. After training directly with the abuelas in Guatemala, she's guided over 100 women back into relationship with their bodies through massage, ritual, and movement.</p>
-      </div>
-      <div class="inst-card reveal">
-        <img src="https://images.squarespace-cdn.com/content/v1/691b9213f19a3d69818cb315/6e5c2e34-a995-45e4-92de-6b2e28bbcc85/DSC07730.JPEG" alt="Joslyn Maya">
-        <h3>Joslyn Maya</h3>
-        <p class="title">Womb Tender · Herbalist · Massage Educator</p>
-        <p>For the past five years, Joslyn has supported women in cultivating intuitive relationships with herbal medicine, womb awareness, and ritual, carrying training in Mayan abdominal massage and somatic embodiment work.</p>
+        <p>Bliss has spent the past five years studying and sharing traditional Mayan womb wisdom. After training directly with the abuelas in Guatemala, she's guided over 100 women back into relationship with their bodies through massage, ritual, and movement.</p>
       </div>
     </div>
   </div>
@@ -1199,7 +1256,7 @@
         </ul>
       </div>
       <div class="mod-card reveal">
-        <div class="mod-photo"><img src="mod2-lifestyle.jpg" alt="Joslyn Maya demonstrating faja wrapping" style="object-position:center 20%;"></div>
+        <div class="mod-photo"><img src="mod2-lifestyle.jpg" alt="Bliss Ann demonstrating faja wrapping" style="object-position:center 30%;"></div>
         <h3>Lifestyle for Womb Healing</h3>
         <p class="mod-shift">You'll start reading your body's signals, and build daily habits that support your cycle.</p>
         <ul>
@@ -1259,11 +1316,11 @@
         <li><strong>Level 1 Certification in Traditional Mayan Womb Massage</strong>, your prerequisite toward in-person Level 2 training</li>
       </ul>
       <div class="price-row">
-        <p class="vb-intro">Includes the foundational curriculum taught inside our in-person trainings.</p>
+        <p class="vb-intro">Includes the foundational curriculum taught inside my in-person trainings.</p>
         <p class="invest-label">Your Investment</p>
         <p class="price">$697</p>
-        <p class="payment-plan">or 3 monthly payments of $249</p>
-        <a href="https://thesisterhoodhive.thinkific.com/order?ct=a25f3806-505d-4c3b-9cd0-4007bc37f2b6" class="btn btn-block">I'm Ready to Begin</a>
+        <p class="payment-plan">Payment plan available at checkout</p>
+        <a href="https://buy.stripe.com/aFa4gA2lRaCx4vR2JWfYY00" class="btn btn-block">I'm Ready to Begin</a>
         <div class="trust-markers">
           <span>✓ Lifetime Access</span>
           <span>✓ Level 1 Certification</span>
@@ -1297,7 +1354,7 @@
     </div>
     <div class="faq-item reveal">
       <h4>Is this a certification?</h4>
-      <p>You'll receive Level 1 Certification from Bliss and Joslyn, your prerequisite for in-person Level 2 training with the Guatemalan abuelas.</p>
+      <p>You'll receive Level 1 Certification from Bliss, your prerequisite for in-person Level 2 training with the Guatemalan abuelas.</p>
     </div>
     <div class="faq-item reveal">
       <h4>What if I've had a hysterectomy or am postmenopausal?</h4>
@@ -1307,7 +1364,7 @@
       <h4>Is this self-paced?</h4>
       <p>Yes, entirely on your own schedule, with lifetime access.</p>
     </div>
-    <p class="quiet-contact reveal">Questions? <a href="mailto:sheisthetimelessmuse@gmail.com">Email us anytime</a>.</p>
+    <p class="quiet-contact reveal">Questions? <a href="mailto:sheisthetimelessmuse@gmail.com">Email me anytime</a>.</p>
   </div>
 </section>
 
@@ -1332,7 +1389,7 @@
 <section class="values">
   <div class="container center">
     <p class="eyebrow center reveal">Your Purchase Makes a Difference</p>
-    <p class="reveal">5% of profits from this course go to <a href="https://www.midwifeproject.net/" target="_blank" rel="noopener">The Midwife Project, Guatemala</a>, supporting the same lineage of midwives who trained Bliss & Joslyn.</p>
+    <p class="reveal">5% of profits from this course go to <a href="https://www.midwifeproject.net/" target="_blank" rel="noopener">The Midwife Project, Guatemala</a>, supporting the same lineage of midwives who trained Bliss.</p>
   </div>
 </section>
 
@@ -1342,8 +1399,29 @@
     <p class="final-line reveal">The first healing relationship you'll ever have is the one with your own body.</p>
     <h2 class="reveal">Your body has been speaking to you all along. <em>It's time to listen.</em></h2>
     <p class="reveal">Join 100+ women who've already found their way back to their body.</p>
-    <a href="https://thesisterhoodhive.thinkific.com/order?ct=20f4edc6-caa3-49e7-9a41-0f6b0fc0e4a6" class="btn">Begin Your Womb Journey</a>
+    <a href="https://buy.stripe.com/aFa4gA2lRaCx4vR2JWfYY00" class="btn">Begin Your Womb Journey</a>
     <p class="final-trust reveal">✓ Lifetime access &nbsp; ✓ Level 1 Certification &nbsp; ✓ Learn at your own pace</p>
+  </div>
+</section>
+
+<!-- 1:1 MENTORSHIP -->
+<section class="mentorship">
+  <div class="container">
+    <div class="mentorship-layout">
+      <img src="mentorship-photo.jpg" alt="Bliss Ann" class="mentorship-photo reveal">
+      <div>
+        <p class="eyebrow reveal">Private Mentorship</p>
+        <h2 class="reveal">Interested in <em>1:1 support?</em></h2>
+        <p class="reveal">Bliss has limited spaces available for 1:1 support. If you feel called to work with her as your guide and mentor, she specializes in helping women move through life's phases, chapters, thresholds, and death and rebirth processes.</p>
+        <p class="reveal">Working together, you'll be held in a safe space to unravel everything you've been carrying, with someone to help you alchemize and hold you through your life transitions. She works with the nervous system, expression, embodied practice, and womb wisdom to guide each session.</p>
+        <p class="reveal">Sessions might look like rage rituals, grieving ceremonies, talk therapy, sensual movement, dance as medicine, or simply sitting with your dreams together, uncovering how to evolve into the woman you're becoming.</p>
+        <a href="#" class="btn reveal">Apply for Mentorship</a>
+      </div>
+    </div>
+    <div class="mentorship-quote reveal">
+      <blockquote>&ldquo;Bliss has a way of holding space for all parts of you, the messy, the emotional, the wild, and lovingly guiding you back to accepting all of you. She's like a life doula, helping you move through thresholds and chapters so new life can birth through you. We laughed, cried, danced, and held ceremony together, and even in the deepest processes, she keeps it fun and light. I highly recommend working with Bliss. She also asks for the right price and makes her work accessible for those who are ready.&rdquo;</blockquote>
+      <p class="mq-attr">Gabby, Bodyworker &amp; Tattoo Artist, 28</p>
+    </div>
   </div>
 </section>
 
@@ -1352,7 +1430,7 @@
 </footer>
 
 <div class="sticky-cta" id="stickyCta">
-  <a href="https://thesisterhoodhive.thinkific.com/order?ct=20f4edc6-caa3-49e7-9a41-0f6b0fc0e4a6" class="btn">Feel The Womb Wisdom</a>
+  <a href="https://buy.stripe.com/aFa4gA2lRaCx4vR2JWfYY00" class="btn">Feel The Womb Wisdom</a>
   <p class="sticky-trust"><span>100+ Women Trained</span><span>Lifetime Access</span><span>Level 1 Certification</span></p>
 </div>
 
