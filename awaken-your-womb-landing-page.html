@@ -721,18 +721,30 @@
   .symptoms-img{max-width:440px;width:100%;margin:0 auto;border-radius:24px;box-shadow:0 30px 60px rgba(0,0,0,.28);}
 
   /* THE WOMB / BENEFITS */
-  .womb-power{background:var(--white);text-align:center;}
-  .womb-power .container{max-width:720px;}
-  .womb-power .eyebrow{margin-bottom:18px;}
-  .womb-power h2{font-family:var(--font-head);font-size:56px;color:var(--blood);font-weight:700;margin:0 0 20px;line-height:1.1;letter-spacing:.5px;}
-  .womb-power h2 em{font-style:italic;font-weight:500;color:var(--red);}
-  .womb-power .womb-power-sub{font-family:var(--font-head);font-style:italic;font-weight:500;font-size:21px;color:var(--ink-soft);max-width:520px;margin:0 auto 50px;line-height:1.5;}
-  .benefits-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:24px;align-items:center;}
-  .benefits-list li{font-family:var(--font-head);font-size:21px;color:var(--ink);line-height:1.4;padding-left:34px;position:relative;max-width:480px;}
-  .benefits-list li .rose{position:absolute;left:0;top:-2px;font-size:20px;}
+  .womb-power{
+    background:radial-gradient(ellipse at center, var(--blood) 0%, #3a0a12 65%, #240610 100%);
+    text-align:center;
+  }
+  .womb-power .container{max-width:920px;}
+  .womb-power .eyebrow{margin-bottom:18px;color:var(--gold);}
+  .womb-power h2{font-family:var(--font-head);font-size:52px;color:var(--cream);font-weight:700;margin:0 0 20px;line-height:1.15;letter-spacing:.5px;}
+  .womb-power h2 em{font-style:italic;font-weight:500;color:var(--gold);}
+  .womb-power .womb-power-sub{font-family:var(--font-head);font-style:italic;font-weight:500;font-size:21px;color:var(--cream-soft);max-width:560px;margin:0 auto 54px;line-height:1.5;}
+  .benefits-list{
+    list-style:none;padding:0;margin:0;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:30px 36px;
+    text-align:left;
+  }
+  .benefits-list li{font-family:var(--font-head);font-size:18.5px;color:var(--cream);line-height:1.4;padding-left:32px;position:relative;}
+  .benefits-list li .rose{position:absolute;left:0;top:-1px;font-size:19px;}
+  @media (max-width:900px){
+    .benefits-list{grid-template-columns:repeat(2,1fr);}
+  }
   @media (max-width:700px){
-    .womb-power h2{font-size:42px;}
-    .benefits-list li{font-size:18px;}
+    .womb-power h2{font-size:36px;}
+    .womb-power-sub{font-size:18px;}
+    .benefits-list{grid-template-columns:1fr;}
+    .benefits-list li{font-size:17px;}
   }
 
   /* WHO ITS FOR */
@@ -1004,21 +1016,21 @@
 <section class="womb-power">
   <div class="container">
     <p class="eyebrow center reveal">Why This Work Matters</p>
-    <h2 class="reveal">The <em>Womb</em></h2>
+    <h2 class="reveal">Open the <em>Womb Temple</em> Doors</h2>
     <p class="womb-power-sub reveal">Your womb isn't just an organ. It's a source of power, memory, and life force, waiting to be reclaimed.</p>
     <ul class="benefits-list reveal">
       <li><span class="rose">🌹</span>Restores harmony to the belly</li>
       <li><span class="rose">🌹</span>Supports fertility</li>
       <li><span class="rose">🌹</span>Balances hormones</li>
       <li><span class="rose">🌹</span>Improves energy flow</li>
-      <li><span class="rose">🌹</span>Gently releases trauma held in the womb space</li>
+      <li><span class="rose">🌹</span>Gently releases held trauma</li>
       <li><span class="rose">🌹</span>Awakens sensuality to self</li>
-      <li><span class="rose">🌹</span>Reconnects you to your intuition and inner wisdom</li>
-      <li><span class="rose">🌹</span>Softens chronic tension and guarding in the pelvis</li>
-      <li><span class="rose">🌹</span>Deepens your relationship with your menstrual cycle</li>
-      <li><span class="rose">🌹</span>Restores trust and safety in your own body</li>
-      <li><span class="rose">🌹</span>Opens space for creativity and self-expression</li>
-      <li><span class="rose">🌹</span>Anchors you back into presence and pleasure</li>
+      <li><span class="rose">🌹</span>Reconnects you to your intuition</li>
+      <li><span class="rose">🌹</span>Softens tension in the pelvis</li>
+      <li><span class="rose">🌹</span>Deepens your relationship with your cycle</li>
+      <li><span class="rose">🌹</span>Restores trust in your body</li>
+      <li><span class="rose">🌹</span>Opens space for creativity</li>
+      <li><span class="rose">🌹</span>Anchors you into pleasure</li>
     </ul>
   </div>
 </section>
